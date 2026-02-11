@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WRA 410 Assignment 01 - Good and Bad Navigation</title>
+    <script>
+        const linkElement = document.createElement('link');
+    linkElement.rel = 'stylesheet';
+    linkElement.type = 'text/css';
+		linkElement.href = (Math.random() > .5 ? 'good.css' : 'bad.css'); 
+    document.head.appendChild(linkElement);
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="link1.html" class="current">link1</a></li>
+            <li><a href="link2.html">link2</a></li>
+            <li><a href="link3.html">link3</a></li>
+        </ul>
+    </nav>
+</body> 
+
+</html>
